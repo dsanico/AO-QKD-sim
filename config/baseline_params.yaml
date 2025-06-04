@@ -1,0 +1,16 @@
+# config/baseline_params.yaml
+simulation:
+  wavelength: 1550e-9  # Common telecom wavelength
+  propagation_distance: 100e3  # 100 km LEO orbit
+  
+atmosphere:
+  r0: 0.15  # Fried parameter (moderate turbulence)
+  L0: 25     # Outer scale
+  l0: 0.01   # Inner scale
+  wind_speed: 10  # m/s frozen flow
+  grid_size: 256
+  pixel_scale: 0.01
+
+quantum:
+  photon_rate: 1e6  # Photons/second
+  timing_jitter: 1e-9  # 1 ns
